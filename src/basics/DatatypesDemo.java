@@ -114,6 +114,97 @@ public class DatatypesDemo {
 		System.out.println("min value of double is " + Double.MIN_VALUE);
 		System.out.println("max value of double is " + Double.MAX_VALUE);
 		
+		
+		// type casting
+		// up casting: lower memory type to higher memory type
+		// higher_data_type_variable = lower_data_type_variable
+		byte num1 = 127;
+		short b2s = num1;
+		System.out.println("b2s = "+b2s);
+		
+		int num2 = 78654;
+		long i2l;
+		i2l = num2;
+		System.out.println("i2l = "+i2l);
+		
+		
+		// down casting: higher memory type to lower memory type
+		// lower_data_type_variable = (lower_data_type) higher_data_type_variable
+		short num3 = 130;
+		byte s2b = (byte) num3;
+		System.out.println("s2b = "+s2b);
+		
+		long num4  = 21345678910l;
+		int l2i = (int) num4;
+		System.out.println("l2i = "+l2i);
+		
+		
+		// int to float
+		int i2 = 1234;
+		float i2f = i2;
+		System.out.println(i2f);
+		
+		// float to int
+		float f2 = 2.34f;
+		int f2i = (int) f2;
+		System.out.println("f2i = "+f2i);
+		
+		
+		// boxing: primitive to wrapper
+		int ip = 12345;
+		Integer ipw = ip;
+		Integer ipw1 = Integer.valueOf(ip);
+		
+		float fp = 12.33f;
+		Float fpw = fp;
+		Float fpw1 = Float.valueOf(fp);
+		
+		// unboxing: wrapper to primitive
+		Integer iw = new Integer(8976666);
+		int iwp = iw;
+		int iwp1 = iw.intValue();
+		System.out.println(iwp1);
+		
+		Double dw = new Double(9.8);
+		double dwp = dw;
+		double dwp1 = dw.doubleValue();
+		
+		// type conversion
+		// primitive to reference (String)
+		int i1 = 6785;
+		String i2s = Integer.toString(i1);
+		System.out.println(i2s+10);
+		
+		float f1 = 9.78f;
+		String f2s = Float.toString(f1);
+		System.out.println(f2s+10);
+		
+		// reference to primitive
+		String s1 = "123456";
+		int s2i = Integer.parseInt(s1);
+		System.out.println(s2i+10);
+		
+		String s2 = "789.12";
+		double s2d = Double.parseDouble(s2);
+		System.out.println(s2d+10);
+		
+		
+		// if string contains an integer value then we can convert that to either 
+		// int or long or float or double
+		// convert s1 to float
+		float s12f = Float.parseFloat(s1);
+		System.out.println(s12f);
+		
+		// if string contains a float point value then we can convert that to either
+		// float or double
+//		int s22i = Integer.parseInt(s2); it will give NumberFormatException
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
