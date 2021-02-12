@@ -1,4 +1,5 @@
 package basics;
+
 /*
 Array is used to store collection of values of similar data type in continuous memory locations
 Array size or length is static i.e. we can not change array size at run time.
@@ -81,11 +82,11 @@ we have two types of arrays
      m3[2][2] = 9
  */
 public class ArraysDemo {
-	
+
 	public static void main(String[] args) {
 		// declare a 1D array
 		int[] marks = new int[6];
-		
+
 		// retrieve the values from array using index number
 		System.out.println(marks[0]);
 		System.out.println(marks[1]);
@@ -93,7 +94,7 @@ public class ArraysDemo {
 		System.out.println(marks[3]);
 		System.out.println(marks[4]);
 		System.out.println(marks[5]);
-		
+
 		// store the values using index numbers
 		marks[0] = 21;
 		marks[1] = 20;
@@ -101,15 +102,96 @@ public class ArraysDemo {
 		marks[3] = 23;
 		marks[4] = 24;
 		marks[5] = 18;
-		
+
 		System.out.println(marks[0]);
 		System.out.println(marks[1]);
 		System.out.println(marks[2]);
 		System.out.println(marks[3]);
 		System.out.println(marks[4]);
 		System.out.println(marks[5]);
+
+		// initialise a 1D array
+		char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
+
+		// to retrieve number of items in an array we can use length property
+		System.out.println("no of items in vowels array = " + vowels.length);
+
+		// retrieve the values from vowels array
+		System.out.println(vowels[0]);
+		System.out.println(vowels[1]);
+		System.out.println(vowels[2]);
+		System.out.println(vowels[3]);
+		System.out.println(vowels[4]);
+//		System.out.println(vowels[5]);  
+		// if index number is greater than or equal to the length of
+		// array then we get array index out of bounds exception
+
+		// 2D array
+		// declare a 2D array
+		int[][] m1 = new int[2][2];
+
+		// assign values to the array
+		// first row
+		m1[0][0] = 1; // first column
+		m1[0][1] = 2; // second column
+		// second row
+		m1[1][0] = 3; // first column
+		m1[1][1] = 4; // second column
+		
+		// retrieve the values from 2D array
+		// first row
+		System.out.print(m1[0][0]+"\t"); // first column
+		System.out.print(m1[0][1]+"\n"); // second column
+		// second row
+		System.out.print(m1[1][0]+"\t"); // first column
+		System.out.print(m1[1][1]+"\n"); // second column
+		
+		// initialise a 2D array
+		int[][] m2 = {{1,2,3}, {4,5,6}, {7,8,9}};
+		
+		// retrieve the values from 2D array
+		// first row
+		System.out.print(m2[0][0]+" "); // first column
+		System.out.print(m2[0][1]+" "); // second column
+		System.out.print(m2[0][2]+"\n"); // third column
+		
+		// second row
+		System.out.print(m2[1][0]+" "); // first column
+		System.out.print(m2[1][1]+" "); // second column
+		System.out.print(m2[1][2]+"\n"); // third column
+		
+		// third row 
+		System.out.print(m2[2][0]+" "); // first column
+		System.out.print(m2[2][1]+" "); // second column
+		System.out.print(m2[2][2]+"\n"); // third column
+		
+		
+		// initialise a 2D array
+		int[][] m3 = {{1,2,3}, {4,5}, {6,7,8,9}};
+		
+		// retrieve the length of m3
+		System.out.println("length of m3 = "+m3.length);
+		System.out.println("first array length i.e. m3[0] length = "+m3[0].length);
+		System.out.println("second array length i.e. m3[1] length = "+m3[1].length);
+		System.out.println("third array length i.e. m3[2] length = "+m3[2].length);
+		
+ 
+		// retrieve the data from the m3 array
+		// first row (array)
+		System.out.print(m3[0][0]+"  "); // first column (item)
+		System.out.print(m3[0][1]+"  "); // second column (item)
+		System.out.print(m3[0][2]+"\n"); // first column (item)
+		
+		// second row (array)
+		System.out.print(m3[1][0]+"  "); // first column (item)
+		System.out.print(m3[1][1]+"\n"); // first column (item)
+		
+		// third row (array)
+		System.out.print(m3[2][0]+"  ");  // first column (item)
+		System.out.print(m3[2][1]+"  ");  // first column (item)
+		System.out.print(m3[2][2]+"  ");  // first column (item)
+		System.out.print(m3[2][3]+"\n");  // first column (item)
+		
 	}
-	
-	
 
 }
