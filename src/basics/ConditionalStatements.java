@@ -160,7 +160,59 @@ public class ConditionalStatements {
 		} else {
 			System.out.println("Failed");
 		}
+		
+		// if else example
+		// verify given character is vowel or not
+		char ch = 'k';
+		if(ch == 'a' || ch =='e' || ch == 'i' || ch == 'o' || ch == 'u') {
+			System.out.println("givne char is vowel");
+		}else {
+			System.out.println("given char is not a vowel");
+		}
 
+		
+		// print a word which starts with given vowel
+		char v = 'a';
+		if(v == 'a') {
+			System.out.println("apple");
+		}else if(v == 'e') {
+			System.out.println("elephant");
+		}else if (v == 'i') {
+			System.out.println("ink");
+		}else if (v == 'o') {
+			System.out.println("orange");
+		}else if (v == 'u') {
+			System.out.println("umberilla");
+		}else {
+			System.out.println("given character is not vowel");
+		}
+		
+		// switch case
+		switch(v) {
+		case 'a':
+			System.out.println("airplane");
+			System.out.println("ant");
+			break;
+		case 'e':
+			System.out.println("egg");
+			System.out.println("eagle");
+			break;
+		case 'i':
+			System.out.println("ice");
+			System.out.println("iron");
+			break;
+		case 'o':
+			System.out.println("onion");
+			System.out.println("oak");
+			break;
+		case 'u':
+			System.out.println("urea");
+			System.out.println("union");
+			break;
+		default:
+			System.out.println("given character is not vowel");
+		}
+		
 	}
 
 }
