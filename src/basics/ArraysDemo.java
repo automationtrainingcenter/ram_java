@@ -88,12 +88,17 @@ public class ArraysDemo {
 		int[] marks = new int[6];
 
 		// retrieve the values from array using index number
-		System.out.println(marks[0]);
-		System.out.println(marks[1]);
-		System.out.println(marks[2]);
-		System.out.println(marks[3]);
-		System.out.println(marks[4]);
-		System.out.println(marks[5]);
+//		System.out.println(marks[0]);
+//		System.out.println(marks[1]);
+//		System.out.println(marks[2]);
+//		System.out.println(marks[3]);
+//		System.out.println(marks[4]);
+//		System.out.println(marks[5]);
+		
+		// retrieve the values from array using normal for loop
+		for(int i = 0; i < marks.length; i++) {
+			System.out.println("at index "+i+" marks = "+marks[i]);
+		}
 
 		// store the values using index numbers
 		marks[0] = 21;
@@ -103,12 +108,18 @@ public class ArraysDemo {
 		marks[4] = 24;
 		marks[5] = 18;
 
-		System.out.println(marks[0]);
-		System.out.println(marks[1]);
-		System.out.println(marks[2]);
-		System.out.println(marks[3]);
-		System.out.println(marks[4]);
-		System.out.println(marks[5]);
+//		System.out.println(marks[0]);
+//		System.out.println(marks[1]);
+//		System.out.println(marks[2]);
+//		System.out.println(marks[3]);
+//		System.out.println(marks[4]);
+//		System.out.println(marks[5]);
+		
+		// retrieve the data from the marks array using for each loop
+		System.out.println("***********************");
+		for(int subject : marks) {
+			System.out.println(subject);
+		}
 
 		// initialise a 1D array
 		char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
@@ -117,15 +128,28 @@ public class ArraysDemo {
 		System.out.println("no of items in vowels array = " + vowels.length);
 
 		// retrieve the values from vowels array
-		System.out.println(vowels[0]);
-		System.out.println(vowels[1]);
-		System.out.println(vowels[2]);
-		System.out.println(vowels[3]);
-		System.out.println(vowels[4]);
+//		System.out.println(vowels[0]);
+//		System.out.println(vowels[1]);
+//		System.out.println(vowels[2]);
+//		System.out.println(vowels[3]);
+//		System.out.println(vowels[4]);
 //		System.out.println(vowels[5]);  
 		// if index number is greater than or equal to the length of
 		// array then we get array index out of bounds exception
 
+		// retrieve the data from the vowels array using normal for loop
+		for(int i = 0; i < vowels.length; i++) {
+//			System.out.println("at index "+i+" vowel = "+vowels[i]);
+			System.out.println(String.format("at index %d vowel = %c", i, vowels[i]));
+		}
+		
+		
+		// retrieve the data from the vowels array using for each loop
+		for(char vowel : vowels) {
+			System.out.println(vowel);
+		}
+		
+		
 		// 2D array
 		// declare a 2D array
 		int[][] m1 = new int[2][2];
