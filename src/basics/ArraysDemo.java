@@ -169,7 +169,7 @@ public class ArraysDemo {
 		System.out.print(m1[1][1] + "\n"); // second column
 
 		// initialise a 2D array
-		int[][] m2 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+		int[][] m2 = { { 0, 1, 2, 3 }, { 4, 5 }, { 7, 8, 9 } };
 
 		// retrieve the values from 2D array
 		// first row
@@ -191,6 +191,14 @@ public class ArraysDemo {
 		for (int i = 0; i < m2.length; i++) {
 			for (int j = 0; j < m2[i].length; j++) {
 				System.out.print(m2[i][j] + " ");
+			}
+			System.out.println();
+		}
+		
+		// retrieve data from the 2D array using for each loop
+		for(int[] oneDArray: m2) {
+			for(int num : oneDArray) {
+				System.out.print(num+"\t");
 			}
 			System.out.println();
 		}
@@ -226,6 +234,15 @@ public class ArraysDemo {
 			}
 			System.out.println();
 		}
+		
+		for(int[] numbers : m3) {
+			for(int number : numbers) {
+				System.out.print(number+"  ");
+			}
+			System.out.println();
+		}
+		
+		
 
 	}
 
